@@ -1,0 +1,91 @@
+<!-- <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Shoes</span>
+    <span aria-current="products">products</span>
+    <span>services</span>
+    <span>about</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home">home</mat-icon>
+    </button>
+</mat-toolbar>
+
+<div class="main">
+    <div class="main_content">
+        <div class="main_text">
+            <h1>Nike <br><span>Collections</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="main_image">
+            <img src="/shoe/src/assets/nike shoe4.png">
+        </div>
+    </div>
+    <button mat-raised-button color="primary">
+        SHOP NOW <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path
+                d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+            </path>
+        </svg>
+    </button>
+</div>
+<router-outlet></router-outlet> -->
+
+<section>
+    <nav>
+        <div class="logo">
+            <h1>shoe<span>s</span></h1>
+        </div>
+
+        <ul>
+            <li><a >Home</a></li>
+            <li><a routerLink="products" >Products</a></li>
+            <li><a routerLink="about"  >About</a></li>
+            <li><a routerLink="review">Review</a></li>
+            <li><a routerLink="services">Services</a></li>
+        </ul>
+
+        <div class="icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i> 
+        </div>
+    </nav>
+
+    <div class="main" id="Home">
+        <div class="main_content">
+            <div class="main_text">
+                <h1>NIKE<span>collections</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cum expedita recusandae repellendus
+                    sit ducimus numquam libero aliquam! Ab quisquam deleniti dolores totam nesciunt obcaecati cumque nostrum
+                    ex pariatur sequi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit ab dolorem provident veritatis
+                    doloremque minus pariatur unde debitis exercitationem ullam dolore, soluta libero molestias perferendis
+                    beatae aliquam suscipit voluptatem.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus vero corrupti modi iste, placeat enim
+                    quibusdam tempora exercitationem. Voluptatum eveniet dicta aperiam voluptatibus cupiditate rem
+                    repudiandae sint, officia quas accusantium.
+                </p>
+            </div>
+            <div class="main_image">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+        </div>
+        <div class="button">
+            <a href="#">SHOP NOW</a>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    </section>
+<router-outlet></router-outlet>
